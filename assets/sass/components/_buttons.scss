@@ -1,0 +1,59 @@
+.bill-btn,
+.waiter-btn {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  z-index: 99;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text {
+    display: inline-block;
+    background-color: $white;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    &::after {
+      width: 10px;
+      height: 10px;
+      background-color: $white;
+      content: "";
+      position: absolute;
+      top: calc(100% - 5px);
+      left: 50%;
+      transform: translate(-50%, 0) rotate(45deg);
+    }
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: $gold;
+    box-shadow: 0px 4px 20px rgba(240, 173, 78, 0.25);
+    padding: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
+.waiter-btn {
+  left: auto !important;
+  right: 15px !important;
+  .icon {
+    background-color: $blue !important;
+    padding: 3px !important;
+    box-shadow: 0px 4px 20px rgba(2, 117, 216, 0.25) !important;
+    img {
+      margin-top: 10px;
+    }
+  }
+}

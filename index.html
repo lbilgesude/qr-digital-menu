@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Menu</title>
+
+    <!-- Css Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header id="header">
+      <div class="container">
+        <div class="language-btn">
+          <img
+            src="assets/img/icons/language-icon.svg"
+            alt="language-icon.svg"
+          />
+        </div>
+        <a href="index.html" class="logo">
+          <span class="logo-img">
+            <img src="assets/img/logo.png" alt="logo.png" />
+          </span>
+          Restoran Adı
+        </a>
+        <div class="money-btn">
+          <img src="assets/img/icons/money-icon.svg" alt="money-icon.svg" />
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Content Start -->
+    <section id="content">
+      <div class="container">
+        <div class="alert-box">
+          <div class="left">
+            <h2 class="title">Hoş geldiniz 👋</h2>
+            <p>
+              Menümüze detaylı bakabilirsiniz. <br />
+              Garson çağırabilirsiniz. <br />
+              Hesabı isteyebilirsiniz. <br />
+            </p>
+          </div>
+          <div class="right">
+            <div class="image">
+              <img
+                src="assets/img/icons/wallet-icon.png"
+                alt="wallet-icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <h2 class="page-title">Kategoriler</h2>
+        <div class="row">
+          <div class="col-6">
+            <a href="product-page.html" class="product-item">
+              <span class="product-image">
+                <img src="assets/img/product-img.jpg" alt="product-image.jpg" />
+              </span>
+              <h2 class="title">Hamburgerler</h2>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product-page.html" class="product-item">
+              <span class="product-image">
+                <img src="assets/img/product-img.jpg" alt="product-image.jpg" />
+              </span>
+              <h2 class="title">Hamburgerler</h2>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product-page.html" class="product-item">
+              <span class="product-image">
+                <img src="assets/img/product-img.jpg" alt="product-image.jpg" />
+              </span>
+              <h2 class="title">Hamburgerler</h2>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product-page.html" class="product-item">
+              <span class="product-image">
+                <img src="assets/img/product-img.jpg" alt="product-image.jpg" />
+              </span>
+              <h2 class="title">Hamburgerler</h2>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product-page.html" class="product-item">
+              <span class="product-image">
+                <img src="assets/img/product-img.jpg" alt="product-image.jpg" />
+              </span>
+              <h2 class="title">Hamburgerler</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content End -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="bill-modal"
+      tabindex="-1"
+      aria-labelledby="bill-modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <div class="image">
+              <img
+                src="assets/img/icons/wallet-icon.png"
+                alt="wallet-icon.png"
+              />
+            </div>
+            <h2 class="title">Masa Seçiniz</h2>
+            <form action="#" class="tables">
+              <input type="radio" name="bill-table-number" id="bill-table-1" />
+              <label for="bill-table-1">1</label>
+              <input type="radio" name="bill-table-number" id="bill-table-2" />
+              <label for="bill-table-2">2</label>
+              <input type="radio" name="bill-table-number" id="bill-table-3" />
+              <label for="bill-table-3">3</label>
+              <input type="radio" name="bill-table-number" id="bill-table-4" />
+              <label for="bill-table-4">4</label>
+              <input type="radio" name="bill-table-number" id="bill-table-5" />
+              <label for="bill-table-5">5</label>
+              <input type="radio" name="bill-table-number" id="bill-table-6" />
+              <label for="bill-table-6">6</label>
+              <input type="radio" name="bill-table-number" id="bill-table-7" />
+              <label for="bill-table-7">7</label>
+              <input type="radio" name="bill-table-number" id="bill-table-8" />
+              <label for="bill-table-8">8</label>
+              <button class="btn btn-success w-100 mt-3 p-2">
+                Hesabı İste
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="waiter-modal"
+      tabindex="-1"
+      aria-labelledby="waiter-modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <div class="image">
+              <img
+                src="assets/img/icons/waiter-icon.png"
+                alt="wallet-icon.png"
+              />
+            </div>
+            <h2 class="title">Masa Seçiniz</h2>
+            <form action="#" class="tables">
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-1"
+              />
+              <label for="waiter-table-1">1</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-2"
+              />
+              <label for="waiter-table-2">2</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-3"
+              />
+              <label for="waiter-table-3">3</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-4"
+              />
+              <label for="waiter-table-4">4</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-5"
+              />
+              <label for="waiter-table-5">5</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-6"
+              />
+              <label for="waiter-table-6">6</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-7"
+              />
+              <label for="waiter-table-7">7</label>
+              <input
+                type="radio"
+                name="waiter-table-number"
+                id="waiter-table-8"
+              />
+              <label for="waiter-table-8">8</label>
+              <button class="btn btn-success w-100 mt-3 p-2">
+                Garson Çağır
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="review-modal"
+      tabindex="-1"
+      aria-labelledby="review-modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <form action="#" class="review-form">
+              <h2 class="big-title">Hesabınızı Getiriyoruz</h2>
+              <p class="sub-title">Bu surada bizi puanlamak ister misiniz?</p>
+              <div class="stars">
+                <label for="review-radio-1">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      stroke="#363c4b"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input type="radio" name="review-radio" id="review-radio-1" />
+                <label for="review-radio-2">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      stroke="#363c4b"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input type="radio" name="review-radio" id="review-radio-2" />
+                <label for="review-radio-3">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      stroke="#363c4b"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input type="radio" name="review-radio" id="review-radio-3" />
+                <label for="review-radio-4">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      stroke="#363c4b"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input type="radio" name="review-radio" id="review-radio-4" />
+                <label for="review-radio-5">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20.9244 9.07557L20.8931 9.10687L16.8321 13.1679C16.3185 13.6815 16.1238 14.4331 16.3233 15.1315L17.9462 20.8117C17.9646 20.8761 17.8928 20.9285 17.837 20.8913L17.8186 20.879L13.1094 17.7396C12.4376 17.2917 11.5624 17.2917 10.8906 17.7396L6.17083 20.8861C6.1124 20.9251 6.03711 20.8701 6.0564 20.8026L6.06393 20.7762L7.67671 15.1315C7.87625 14.4331 7.68147 13.6815 7.16787 13.1679L3.13547 9.13547L3.09579 9.09579C3.06044 9.06044 3.08548 9 3.13547 9H8.16667C8.97407 9 9.70228 8.51452 10.0128 7.76923L11.9369 3.15144C11.9603 3.09535 12.0397 3.09535 12.0631 3.15144L13.9872 7.76923C14.2977 8.51452 15.0259 9 15.8333 9H20.8931C20.9326 9 20.9523 9.04768 20.9244 9.07557Z"
+                      stroke="#363c4b"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input type="radio" name="review-radio" id="review-radio-5" />
+              </div>
+              <textarea
+                name="review-textarea"
+                id="review-textarea"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Şikayet ve önerilerinizi yazabilirsiniz"
+              ></textarea>
+              <button class="btn btn-success w-100 mx-0 p-2">
+                Bizi Değerlendirin
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Bottom Buttons Start -->
+    <button
+      type="button"
+      class="bill-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#bill-modal"
+    >
+      <span class="text">Hesabı iste</span>
+      <div class="icon">
+        <img src="assets/img/icons/wallet-icon.png" alt="wallet-icon.png" />
+      </div>
+    </button>
+    <button
+      type="button"
+      class="waiter-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#review-modal"
+    >
+      <span class="text">Garson Çağır</span>
+      <div class="icon">
+        <img src="assets/img/icons/waiter-icon.png" alt="waiter-icon.png" />
+      </div>
+    </button>
+    <!-- Bottom Buttons End -->
+
+    <!-- Js Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const stars = document.querySelectorAll(".review-form input");
+      const starSvgs = document.querySelectorAll(".review-form svg");
+      console.log(stars);
+      for (let i = 0; i < stars.length; i++) {
+        stars[i].addEventListener("click", () => {
+          switch (i) {
+            case 0:
+              for (let a = 0; a < starSvgs.length; a++) {
+                starSvgs[a].classList.remove("active");
+              }
+              starSvgs[0].classList.add("active");
+              break;
+            case 1:
+              for (let a = 0; a < starSvgs.length; a++) {
+                starSvgs[a].classList.remove("active");
+              }
+              starSvgs[0].classList.add("active");
+              starSvgs[1].classList.add("active");
+              break;
+            case 2:
+              for (let a = 0; a < starSvgs.length; a++) {
+                starSvgs[a].classList.remove("active");
+              }
+              starSvgs[0].classList.add("active");
+              starSvgs[1].classList.add("active");
+              starSvgs[2].classList.add("active");
+              break;
+            case 3:
+              for (let a = 0; a < starSvgs.length; a++) {
+                starSvgs[a].classList.remove("active");
+              }
+              starSvgs[0].classList.add("active");
+              starSvgs[1].classList.add("active");
+              starSvgs[2].classList.add("active");
+              starSvgs[3].classList.add("active");
+              break;
+            case 4:
+              for (let a = 0; a < starSvgs.length; a++) {
+                starSvgs[a].classList.remove("active");
+              }
+              starSvgs[0].classList.add("active");
+              starSvgs[1].classList.add("active");
+              starSvgs[2].classList.add("active");
+              starSvgs[3].classList.add("active");
+              starSvgs[4].classList.add("active");
+              break;
+
+            default:
+              break;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
